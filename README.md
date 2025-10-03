@@ -339,7 +339,7 @@ Having issues? We're here to help!
 
 - 📧 **Email**: omar2086pcc40sh@gmail.com
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/codeslayer86/BioSteller/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/your-username/biosteller/discussions)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/codeslayer86/BioSteller/discussions/)
 - 📖 **Documentation**: [Wiki](https://github.com/codeslayer86/BioSteller/wiki)
 
 ---
