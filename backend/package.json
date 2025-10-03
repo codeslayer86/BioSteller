@@ -1,0 +1,27 @@
+{
+  "name": "biosteller-backend",
+  "version": "1.0.0",
+  "description": "Backend server for BioSteller",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "knex:migrate:make": "knex migrate:make -x js",
+    "knex:migrate:latest": "knex migrate:latest"
+  },
+  "dependencies": {
+    "@google/genai": "^1.16.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "joi": "^17.13.3",
+    "knex": "^3.1.0",
+    "mysql2": "^3.10.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

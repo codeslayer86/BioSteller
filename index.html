@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioSteller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+              display: ['Orbitron', 'sans-serif'],
+            },
+            colors: {
+              'emerald-primary': '#046307',    // Main accent green
+              'emerald-light': '#057a09',       // Lighter accent for gradients, active states
+              'emerald-dark': '#034f06',       // Darker accent for hovers
+              'emerald-accent-bright': '#6EE7B7', // Bright accent for dark mode icons
+              'ivory-bg': '#FFFFF0',            // Light mode background
+              'charcoal-deep': '#1A1A1A',       // Dark mode background
+              'charcoal-text': '#1A1A1A',       // Light mode text
+              'ivory-text': '#E0E0D6',          // Dark mode primary text
+              'ivory-text-dim': '#A3A39A',      // Dark mode secondary text
+
+              // Legacy mappings for component compatibility
+              'space-dark': '#1A1A1A',
+              'space-blue': '#046307',
+              'space-light-blue': '#057a09',
+              'space-accent': '#034f06',
+              'space-text': '#E0E0D6',
+              'space-text-dim': '#A3A39A',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'scroll': 'scroll 40s linear infinite',
+              'scroll-slow': 'scroll 60s linear infinite',
+              'scroll-fast': 'scroll 30s linear infinite',
+              'chat-bubble-in': 'chatBubbleIn 0.4s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              chatBubbleIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px) scale(0.98)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "lodash": "https://aistudiocdn.com/lodash@^4.17.21",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0",
+    "d3-cloud": "https://aistudiocdn.com/d3-cloud@^1.2.7",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "openai": "https://aistudiocdn.com/openai@^5.16.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-ivory-bg dark:bg-charcoal-deep text-charcoal-text dark:text-ivory-text transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "BioSteller",
+  "description": "BioSteller: An interactive web application to help researchers, students, and enthusiasts explore NASA's Space Biology data using AI-powered search, summarization, and visualization tools.",
+  "requestFramePermissions": []
+}
