@@ -104,8 +104,8 @@ BioSteller addresses the challenge of making NASA's extensive space biology data
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/biosteller.git
-   cd biosteller
+   git clone https://github.com/codeslayer86/BioSteller
+   cd BioSteller
    ```
 
 2. **Install frontend dependencies**
