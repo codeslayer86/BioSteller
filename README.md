@@ -98,9 +98,36 @@ BioSteller addresses the challenge of making NASA's extensive space biology data
 
 - **Node.js** 18.0 or higher
 - **npm** or **yarn** package manager
-- **Google Gemini API Key** ([Get one here](https://ai.google.dev/))
+- **Google Gemini API Key** (FREE - [Get one here](https://aistudio.google.com/app/apikey))
 
 ### 📥 Installation
+
+#### ⚡ Option 1: One-Click Launch (Windows - Easiest!)
+
+**Automated PowerShell Script** - Does everything for you!
+
+```powershell
+git clone https://github.com/codeslayer86/BioSteller
+cd BioSteller
+.\start-biosteller.ps1
+```
+
+**Or simply double-click `START.bat` after cloning!**
+
+This script automatically:
+- ✅ Installs all dependencies (frontend & backend)
+- ✅ Prompts for your API key (with link to get one FREE)
+- ✅ Sets up the database
+- ✅ Frees up ports if needed
+- ✅ Starts both servers
+- ✅ Opens the app in your browser
+- ✅ Press any key to stop everything when done
+
+**That's it! Just run one command!** See [QUICK_START.md](QUICK_START.md) for detailed guide.
+
+---
+
+#### 📦 Option 2: Manual Installation
 
 1. **Clone the repository**
    ```bash
